@@ -80,5 +80,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if (cardNumber <> ""){
     
+  } else {
+    console.log();
   }
 }

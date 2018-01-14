@@ -62,13 +62,14 @@ function total() {
 
 function removeFromCart(item) {
   // Need to find out the index matching the item //
-  var i = -1;
+  var i = 0;
   var foundItem = false;
   while ((i < cart.length) && (foundItem === false)){
-    i++;
     if (cart[i].hasOwnProperty(item)){
       cart.splice(i,1);
       foundItem = true;
+    } else {
+      i++;
     }
   }
   if (foundItem===false){
